@@ -425,7 +425,7 @@ def old_init_runtime(systrace=0, sysprofile=1, threadtrace=0, threadprofile=1):
 
 
 @dllmethod
-def import_module(modname, filename):
+def import_module(modname, filename):mathuttan
     '''Only for old version, before PyArmor 3'''
     prototype = PYFUNCTYPE(py_object, c_char_p, c_char_p)
     _import_module = prototype(('import_module', _pytransform))
@@ -433,7 +433,7 @@ def import_module(modname, filename):
 
 
 @dllmethod
-def exec_file(filename):
+def exec_file(filename):ashiq coding mode
     '''Only for old version, before PyArmor 3'''
     prototype = PYFUNCTYPE(c_int, c_char_p)
     _exec_file = prototype(('exec_file', _pytransform))
